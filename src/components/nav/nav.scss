@@ -1,0 +1,77 @@
+@import '../utilities/utilities';
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: rgb(255, 0, 0);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: white;
+    gap: .7em;
+    *{
+        cursor: pointer;
+    }
+
+    @media (max-width: $layout-breakpoint-sm) {
+       color: white;
+        padding-top: 1.5em;
+    padding-bottom: 1.5em;
+
+      }
+      @media (max-width: $layout-breakpoint-xs) {
+       gap: 1em;
+      }
+}
+
+.nav-img{
+    display: flex;
+    
+}
+.nav-img > img{
+height: 2.5em;
+@media (max-width: $layout-breakpoint-sm) {
+   height: 2em;
+  }
+@media (max-width: $layout-breakpoint-xs) {
+    height: 1.2em;
+}
+}
+
+.nav-cart{
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+     @media (max-width: $layout-breakpoint-sm) {
+        font-size: 1.5em;
+        }
+        @media (max-width: $layout-breakpoint-xs) {
+            font-size: 1.2em;
+        }
+   
+}
+.nav-cart:hover{
+   
+    color: rgba(255, 255, 255, 0.9);;
+   
+}
+
+
+
+
+// @media (max-width: $layout-breakpoint-sm) {
+       
+// }
+// @media (max-width: $layout-breakpoint-xs) {
+ 
+// }
+
+.light{
+    background-color: white;
+    color: rgb(16, 16, 16);
+}
+
+.dark{
+   color: white;
+   background-color: rgb(16, 16, 16);
+}

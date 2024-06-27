@@ -1,0 +1,16 @@
+$layout-breakpoint-sm: 960px;
+$layout-breakpoint-xs: 400px;
+
+@mixin align-justify( $justify, $align) {
+    .#{$justify}-#{$align} {
+      display: flex;
+      justify-content: $justify;
+      align-items: $align;
+    }
+  }
+
+  @include align-justify('center','center');
+@include align-justify(center,center);
+@include align-justify(center,bottom);
+@include align-justify(center,top);
+

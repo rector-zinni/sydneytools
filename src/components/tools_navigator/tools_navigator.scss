@@ -1,0 +1,192 @@
+@import '../utilities/utilities';
+
+.tools-navigator{
+    display: flex;
+    flex-direction: column;
+    padding:2em 30em 10em 30em;
+    gap: 1.5em;
+
+}
+
+.image-header{
+display: flex;
+gap: .5em;
+@media (max-width: $layout-breakpoint-sm) {
+      flex-direction: column; 
+}
+@media (max-width: $layout-breakpoint-xs) {
+ 
+}
+}
+
+
+
+.ih-image{
+  width: 18em;
+  border: 1px solid #ccc;
+  height: 8em;
+  img{
+    width: 70%;
+    height: 30%;
+    padding-top: 1em;
+  }
+}
+
+.ih-title{
+    font-size: 1.5em;
+    margin: 0;
+    line-height: 2em;
+    display: flex;
+    align-items: top;
+    h1{
+        margin: 0;
+    }
+}
+
+
+.tools-grid-2{
+display: grid;
+grid-template-columns: 59% 41%;
+gap: 1em;
+}
+
+.image-viewer-grid{
+display: grid;
+grid-template-columns:20% 80%;
+align-items: center;
+gap: 1em;
+}
+
+.image-viewer{
+  background-color: #ccc;
+  display: flex;
+  overflow: hidden;
+}
+.image-viewer img{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  
+  
+}
+
+.img-wrapper>.arrow-icon:first-child{
+margin-bottom: .5em;
+}
+.img-wrapper>.arrow-icon:last-child{
+  margin-top: .5em;
+  }
+.red{
+  border: 1px solid red;
+}
+.blue{
+  border: 1px solid rgb(0, 255, 166);
+}
+.images-media-grid{
+ display: flex;
+ flex-direction: column; 
+ gap: 1em;
+ height: 50em;
+ overflow-y: scroll;
+ -ms-overflow-style: none;
+cursor: grab;
+
+}
+
+.images-media-grid::-webkit-scrollbar{
+display: none;
+}
+
+.image-item{
+  height: 12em;
+  border: 1px solid #ccc;
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.arrow-icon{
+  font-size: 1.4em;
+*{
+  cursor: pointer;
+}
+}
+
+
+.cart-grid{
+display: flex;
+flex-direction: column;
+padding: .5em;
+}
+.model-number{
+  display: flex;
+  flex-direction: column;
+  
+  font-size: 1.2em;
+  padding: .5em;
+  margin: 0;
+}
+.cart-price{
+  h1{
+    color: #ff0000;
+    font-size:5.5em;
+    margin: 0;
+    sup{
+      font-size: 3rem
+    }
+  }
+}
+
+
+
+.cart-desc {
+  font-size: 1em;
+  padding: .5em;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: .3em;
+}
+
+.cart-desc > button{
+  border: 0;
+  background-color: rgb(155, 232, 182);
+  border-radius: 1em;
+  padding: .3em;
+}
+
+
+
+.coupon{
+
+}
+
+.checkout-btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button{
+    width: 95%;
+    padding: .5em;
+    background-color: #ff0000;
+    color: white;
+    outline: 0;
+    border: 0;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: all 300ms;
+    border-radius: .1em;
+  }
+  button:hover{
+    background-color: #ef612e;
+  }
+}
+// @media (max-width: $layout-breakpoint-sm) {
+       
+// }
+// @media (max-width: $layout-breakpoint-xs) {
+ 
+// }\
+
